@@ -1,0 +1,11 @@
+input{
+    background-color: var(--azulOscuro);
+    color: white;
+    outline: none;
+    border: unset;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    width: 85%;
+    font-size: 2rem;
+    max-width: 80rem;
+}

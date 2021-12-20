@@ -1,0 +1,73 @@
+li{
+    position: relative;
+    list-style: none;
+    background-color:var(--contraste) ;
+    color: white;
+    border-radius: 1rem;
+    min-height: 8rem;
+    height: auto;
+    margin: 1.3rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100rem;
+}
+.text{
+    font-size: 1.6rem;
+    width: 72%;
+    margin-left: 5rem;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-align: justify;
+}
+.chulito{
+    position: absolute;
+    background-color: var(--azulClaro);
+    left: 1.3rem;
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    
+}
+.chulito p{
+    display: none;
+    color: var(--contraste);
+    font-weight: bold;
+}
+.cerrar{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    font-weight: bolder;
+    right: 1rem;
+    top: 0rem;
+    font-size: 2.5rem;
+    color: var(--azul);
+    border-bottom-left-radius: 1rem;
+    cursor: pointer;
+}
+.cerrar:hover{
+    color: rgba(255, 0, 0, 0.678);
+}
+span p{
+    position: relative;
+    top:-2px;
+    left: 1px;
+    font-size: 2rem;
+    transform: scaleY(-1) skew(-10deg, 10deg) rotatez(-60deg)
+}
+.chulito .active{
+    display: inherit;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+@media (min-width:1024px) {
+    .text{
+        width: 90%;
+    }
+}

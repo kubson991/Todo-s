@@ -1,0 +1,25 @@
+.loadingContainer{
+    display:  flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 5rem;
+}
+
+.circle1,.circle2,.circle3{
+    background-color: var(--azulClaro);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    animation: loading 0.8s ease-in-out alternate;
+    animation-iteration-count:infinite;
+}
+.circle2{
+    animation-delay: 0.2s;
+}
+.circle3{
+    animation-delay: 0.4s;
+}
+@keyframes loading {
+    from{transform: scale(1);}
+    to{transform: scale(1.5);}
+}

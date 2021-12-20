@@ -1,0 +1,94 @@
+#root {
+  text-align: center;
+  width: 95%;
+  margin: auto auto;
+}
+.TodoSearch{
+  margin: 2rem 0;
+}
+.TodoCounter{
+  margin: 4rem 0 0 0;
+}
+.TodoList{
+  height: 30rem;
+  overflow-y: scroll;
+}
+.TodoList::-webkit-scrollbar{
+ display: none;
+}
+.modalCard{
+  position: absolute;
+  width: 90%;
+  height: 35%;
+  margin: auto auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: modalCard 0.4s ease-out;
+  border-radius: 0.5rem;
+  background-color: var(--azul);
+}
+@keyframes modalCard {
+  from{
+    width: 0;
+    height: 0;
+  }
+  to{
+    width: 90%;
+    height: 35%;
+  }
+}
+@media(min-width:768px){
+  .modalCard{
+    width: 85%;
+    height: 45%;
+  }
+  @keyframes modalCard {
+    from{
+      width: 0;
+      height: 0;
+    }
+    to{
+      width: 85%;
+      height: 45%;
+    }
+  }
+}
+@media(min-width:1024px){
+  .modalCard{
+    width: 75%;
+    height: 55%;
+  }
+  @keyframes modalCard {
+    from{
+      width: 0;
+      height: 0;
+    }
+    to{
+      width: 75%;
+      height: 55%;
+    }
+  }
+}
+@media(min-width:1440px){
+  .modalCard{
+    width: 75%;
+    height: 65%;
+  }
+  @keyframes modalCard {
+    from{
+      width: 0;
+      height: 0;
+    }
+    to{
+      width: 75%;
+      height: 65%;
+    }
+  }
+}
+@media (min-width:1800px) {
+  .TodoList {
+     height: 40rem;
+  }
+}

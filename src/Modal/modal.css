@@ -1,0 +1,16 @@
+#modal{
+    position: absolute;
+    top: 0;
+    
+}
+.backgroundModal{
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);   
+    animation: modal 0.6s ease forwards;
+}
+@keyframes modal{
+    from {background-color: transparent;}
+    to {background-color: rgba(0, 0, 0, 0.5);}
+}
