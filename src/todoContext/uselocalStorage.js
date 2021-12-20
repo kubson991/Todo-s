@@ -24,7 +24,7 @@ function useLocalStorage(itemName, initialValue) {
         console.log('estallo')
       }
     }, 3000);
-  },[]);
+  });
 
   const saveItem = (newItem) => {
     const strigifiedTodos = JSON.stringify(newItem);
